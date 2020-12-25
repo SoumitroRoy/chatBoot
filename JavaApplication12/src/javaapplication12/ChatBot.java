@@ -52,14 +52,32 @@ public class ChatBot extends JFrame implements KeyListener{
  
 		setVisible(true);
 	}
+        String[][] chatBot={
+		//standard greetings
+		{"hi","hello","hola","ola","howdy"},
+		{"hi","hello","hey"},
+		//question greetings
+		{"how are you","how r you","how r u","how are u"},
+		{"good","doing well"},
+		//yes
+		{"yes"},
+		{"no","NO","NO!!!!!!!"},
+		//default
+		{"shut up","you're bad","noob","stop talking",
+		"(michael is unavailable, due to LOL)"}
+	};
  
        
 	public void keyPressed(KeyEvent e){
-		
+		if(e.getKeyCode()==KeyEvent.VK_ENTER){
+			input.setEditable(false);
 	}
  
+        
 	public void keyReleased(KeyEvent e){
-
+          if(e.getKeyCode()==KeyEvent.VK_ENTER){
+			input.setEditable(false);
+          }
 	}
  
 	public void keyTyped(KeyEvent e){}
