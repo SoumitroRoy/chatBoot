@@ -1,4 +1,4 @@
-package javaapplication8;
+package javaapplication12;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
