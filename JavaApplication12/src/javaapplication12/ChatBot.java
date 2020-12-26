@@ -71,16 +71,42 @@ public class ChatBot extends JFrame implements KeyListener{
 	public void keyPressed(KeyEvent e){
 		if(e.getKeyCode()==KeyEvent.VK_ENTER){
 			input.setEditable(false);
+			//-----grab quote-----------
+			String quote=input.getText();
+			input.setText("");
+			addText("-->You:\t"+quote);
+			quote=quote.trim();
+			while(
+				quote.charAt(quote.length()-1)=='!' ||
+				quote.charAt(quote.length()-1)=='.' ||
+				quote.charAt(quote.length()-1)=='?'
+			){
+				quote=quote.substring(0,quote.length()-1);
+			}
+                
+			quote=quote.trim();
+			byte response=0;
+                }
+	//-----default--------------
+			if(response==1){
+				int r=(int)Math.floor(Math.random()*chatBot[chatBot.length-1].length);
+				addText("\n-->Michael\t"+chatBot[chatBot.length-1][r]);
+			}
+			addText("\n");
+		}
 	}
  
-        
 	public void keyReleased(KeyEvent e){
-          if(e.getKeyCode()==KeyEvent.VK_ENTER){
-			input.setEditable(false);
-          }
+		if(e.getKeyCode()==KeyEvent.VK_ENTER){
+			input.setEditable(true);
+		}
 	}
  
 	public void keyTyped(KeyEvent e){}
+ 
+	public void addText(String str){
+		dialog.setText(dialog.getText()+str);
+	}
  
 	
 }
