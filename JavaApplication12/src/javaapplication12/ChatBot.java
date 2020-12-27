@@ -1,4 +1,11 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package javaapplication12;
+
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
@@ -8,7 +15,6 @@ import java.awt.Color;
 
 import java.awt.event.KeyListener;
 import java.awt.event.KeyEvent;
-
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
@@ -30,7 +36,11 @@ public class ChatBot extends JFrame implements KeyListener {
         
         //question greetings
         {"how are you", "how r you", "how r u", "how are u"},
-        {"good", "doing well"},
+        {"good and you?", "doing well.whats about you?","fine and u?",},
+        
+        //counter greetings
+        {"fine","well","I'm fine","doing well"},
+        {"that's nice","love to hear that","ok"},
         
         //yes
         {"yes"},
@@ -51,6 +61,14 @@ public class ChatBot extends JFrame implements KeyListener {
         //stop bdy shaming
         {"he are ugly","she is fat","she is ugly","they are short","he look a tower"},
         {"Warning!!! stop bdy shaming,plz"},
+        
+        //about sports
+        {"what is your favourite sports","what game do you like most","what's your game"},
+        {"cricket"},
+        
+        //fav players
+        {"who is your favourite player in cricket","who you like most in cricket"},
+        {"ms Dhoni","MSD","Dhoni"},
         
         //default
         { "you're bad", "noob",
@@ -178,5 +196,3 @@ public class ChatBot extends JFrame implements KeyListener {
         return verbID;
     }
 }
-
- 
