@@ -1,11 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package javaapplication12;
-
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
@@ -15,6 +8,7 @@ import java.awt.Color;
 
 import java.awt.event.KeyListener;
 import java.awt.event.KeyEvent;
+
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
@@ -184,3 +178,5 @@ public class ChatBot extends JFrame implements KeyListener {
         return verbID;
     }
 }
+
+ 
