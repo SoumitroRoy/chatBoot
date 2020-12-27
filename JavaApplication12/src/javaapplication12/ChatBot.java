@@ -68,7 +68,7 @@ public class ChatBot extends JFrame implements KeyListener {
         
         //fav players
         {"who is your favourite player in cricket","who you like most in cricket"},
-        {"ms Dhoni","MSD","Dhoni"},
+        {"MS Dhoni","MSD","Dhoni"},
         
         //default
         { "you're bad", "noob",
